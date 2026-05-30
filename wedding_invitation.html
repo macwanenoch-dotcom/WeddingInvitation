@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation | Enoch & Partner</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="hero">
+        <div class="overlay">
+            <h1 id="greeting">Welcome, Valued Guest</h1>
+            <p class="subtitle">We request the pleasure of your company</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="details">
+            <div class="card">
+                <h2>The Wedding</h2>
+                <p><strong>9th September 2026</strong></p>
+                <p>10:30 am — 12:00 pm</p>
+                <p>Sharon Methodist Church</p>
+            </div>
+
+            <div id="lunch-section" class="card hidden">
+                <h2 class="accent-text">Special Lunch</h2>
+                <p><strong>9th September 2026</strong></p>
+                <p>12:30 pm onwards</p>
+                <p>Sayaji Hotel</p>
+            </div>
+
+            <div class="card">
+                <h2>Reception & Thanksgiving</h2>
+                <p><strong>10th September 2026</strong></p>
+                <p>Details to follow</p>
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <section class="rsvp-container">
+            <h2>RSVP</h2>
+            <form id="rsvpForm">
+                <input type="text" id="formName" placeholder="Your Name" required>
+                
+                <div class="radio-group">
+                    <label>Will you attend?</label>
+                    <label><input type="radio" name="attendance" value="yes" required> Joyfully Accept</label>
+                    <label><input type="radio" name="attendance" value="no"> Regretfully Decline</label>
+                </div>
+
+                <div id="lunch-rsvp" class="hidden">
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="attendingLunch">
+                        Confirming for Lunch at Sayaji Hotel
+                    </label>
+                </div>
+
+                <button type="submit" class="btn-primary">Send Response</button>
+            </form>
+        </section>
+
+        <section class="contact">
+            <p>Questions?</p>
+            <a href="mailto:macwanenoch@gmail.com" class="btn-secondary">Contact Us</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Enoch's Wedding. Built with love.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
